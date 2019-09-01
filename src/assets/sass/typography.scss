@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Economica&display=swap');
+
+@font-face {
+  font-family: 'steelfishregular';
+  src: url('../fonts/steelfish.regular.ttf') format('ttf'),
+  url('../fonts/steelfish.regular-webfont.woff2') format('woff2'),
+  url('../fonts/steelfish.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo-font {
+  font-family: 'steelfishregular' !important;
+}
+
+h2, h3, h4 {
+  font-family: 'Economica'
+}
+
+.btn-primary {
+  font-family: 'Economica';
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
