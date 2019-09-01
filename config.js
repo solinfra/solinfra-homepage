@@ -12,6 +12,65 @@ module.exports = {
   heading: 'solinfra',
   subHeading: '... building the clouds of tomorrow, today',
 
+  // projects
+
+  projects: [
+    {
+      title: 'Balancing NoOps and DevOps',
+      body: `
+              Streamlining as much of your infrastructure effectively is our goal
+              and to achieve this we take the best of both worlds from
+              NoOps and DevOps.
+              NoOps being the ideal of moving towards a frictionless software
+              deployment by automating and abstracting infrastructure, 
+              up to the point of serverless.
+              There is such a thing as abstracting out too much,
+              hurting performance and reliability, and we provide you with this
+              frictionlessness whilst you retain control of your infrastructure.
+            `
+
+    },
+    {
+      title: 'Open-Source',
+      body: `
+              We proudly utilize open-source projects to the fullest extent
+              possible in our solutions.
+              What open-source entails for you as a client is an assurance
+              of continued quality and transparency. No trying to sell you
+              on proprietary software shrouded in NDAs and mystery and no vendor
+              lock-ins from us.
+              Additionally, you are free to re-tailor parts as your needs
+              change over time, no dealing with lawyers, only building.
+            `
+
+    },
+    {
+      title: 'Cloud-Native',
+      body: `
+              Our solutions are built on the cloud-native philosophy. Adopting it
+              allows your organization to become highly efficient while keeping your
+              developers happy. Have a look through our own repositories that are
+              built this way. We also believe that cloud-native should not entail
+              locking you to a specific cloud provider, or even any at all unlike 
+              others. The solution you are provided is agnostic, and gives you
+              the ultimate fleixibility of choosing cloud providers as you please.
+            `
+
+    },
+    {
+      title: 'Self-Healing',
+      body: `
+              Time is money. Likewise, any downtime of your service is
+              a significant cost to you both in terms of lost opportunity and
+              potential loss of trust. This is why our solutions are
+              based on the principles of self-healing and redundancy, where
+              your service is hosted amongst multiple cloud instances. If one 
+              goes down, another is ready to take its place, while the downed
+              instance is replaced.
+            `
+
+    }
+  ],
   // social
   socialLinks: [
     {
