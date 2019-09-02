@@ -13,6 +13,11 @@
   .project-text {
     padding: 3rem;
     font-size: 90%;
+    @media (max-width: 991.98px) {
+      .project-checkers {
+        height: 35rem;
+      }
+    }
     @media (min-width: 992px) {
       padding: 5rem;
       hr {

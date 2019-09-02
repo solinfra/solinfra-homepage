@@ -24,8 +24,8 @@ module.exports = {
               NoOps being the ideal of moving towards a frictionless software
               deployment by automating and abstracting infrastructure, 
               up to the point of serverless.
-              There is such a thing as abstracting out too much,
-              hurting performance and reliability, and we provide you with this
+              Abstracting out too much hurts performance and reliablity. 
+              We'll provide you with
               frictionlessness whilst you retain control of your infrastructure.
             `
 
