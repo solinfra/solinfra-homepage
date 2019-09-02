@@ -35,9 +35,17 @@
     "deploy": "npm run clean && gatsby build && gh-pages -d public",
     "serve": "gatsby serve -H 0.0.0.0",
     "clean": "rimraf .cache public",
+    "lint": "eslint 'src/**/*.js'",
+    "lint:fix": "eslint 'src/**/*.js' --fix",
     "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3"
