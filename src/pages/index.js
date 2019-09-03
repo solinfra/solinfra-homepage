@@ -1,20 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-import Layout from '../components/Layout';
-import Scroll from '../components/Scroll';
+import Layout from '../components/Layout'
+import Scroll from '../components/Scroll'
 
-import config from '../../config';
+import config from '../../config'
 
-import Footer from '../components/Footer';
-import SocialLinks from '../components/SocialLinks';
-import Projects from '../components/Projects';
-import Subscribe from '../components/Subscribe';
-import Contact from '../components/Contact';
-import Header from '../components/Header';
+import Footer from '../components/Footer'
+import SocialLinks from '../components/SocialLinks'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+import Header from '../components/Header'
 
-import bgMaster from '../assets/images/bg-masthead.jpg';
-
-const IndexPage = () => (
+const IndexPage = () =>
   <Layout>
     <Header />
 
@@ -38,16 +35,8 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h2 className="text-white mb-4">The solution to infrastructure</h2>
-            <p className="text-white-50">
-              Whether you're a start-up with the foresight of appropriately preparing
-              for your infrastructure needs or 
-              an already established organization looking to upgrade your legacy IT
-              infrastructure, we're here for you.
-              Our experienced team will blueprint and manage the ideal 
-              infrastructure to make your service run efficiently, with resilience and 
-              scalablity in mind.
-            </p>
+            <h2 className="text-white mb-4">{config.about.title}</h2>
+            <p className="text-white-50">{config.about.body}</p>
           </div>
         </div>
       </div>
@@ -58,6 +47,5 @@ const IndexPage = () => (
     <SocialLinks />
     <Footer />
   </Layout>
-);
 
-export default IndexPage;
+export default IndexPage

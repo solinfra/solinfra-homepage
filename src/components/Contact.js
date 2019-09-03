@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-export default function Contact() {
+export default function Contact () {
   return (
     <section id="contact" className="signup-section">
       <div className="container">
@@ -12,5 +12,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }

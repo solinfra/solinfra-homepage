@@ -8,12 +8,25 @@ module.exports = {
   manifestThemeColor: '#34d12e',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/`,
+  pathPrefix: '/',
   heading: 'solinfra',
   subHeading: '... building the clouds of tomorrow, today',
 
-  // projects
+  // about
+  about: {
+    title: 'The solution to infrastructure',
+    body: `
+            Whether you're a start-up with the foresight of appropriately preparing
+            for your infrastructure needs or
+            an already established organization looking to upgrade your legacy IT
+            infrastructure, we&lsquo;re here for you.
+            Our experienced team will blueprint and manage the ideal
+            infrastructure to make your service run efficiently, with resilience and
+            scalablity in mind.
+`
 
+  },
+  // projects
   projects: [
     {
       title: 'Balancing NoOps and DevOps',
@@ -76,14 +89,14 @@ module.exports = {
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/solinfra',
+      url: 'https://twitter.com/solinfra'
     },
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/solinfra',
-    },
+      url: 'https://github.com/solinfra'
+    }
   ],
   email: 'contact@solinfra.io',
-  address: 'Suite 1801 - 1 Yonge Street, Toronto, Canada, M5E 1W7',
-};
+  address: 'Suite 1801 - 1 Yonge Street, Toronto, Canada, M5E 1W7'
+}
