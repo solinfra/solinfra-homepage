@@ -8,7 +8,7 @@ module.exports = {
   manifestThemeColor: '#34d12e',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: '/',
+  pathPrefix: null,
   heading: 'solinfra',
   subHeading: '... building the clouds of tomorrow, today',
 
