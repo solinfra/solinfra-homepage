@@ -1,8 +1,11 @@
 module.exports = {
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: {
-      impliedStrict: true
+      impliedStrict: true,
+      jsx: true,
+      modules: true
     }
   },
   extends: [
@@ -10,6 +13,11 @@ module.exports = {
     'plugin:react/recommended',
     'standard'
   ],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   env: {
     es6: true,
     mocha: true,
@@ -31,7 +39,7 @@ module.exports = {
     'accessor-pairs': 1,
     'array-callback-return': 0, // this best practice calls out the use of map over forEach
     'class-methods-use-this': 1,
-    'complexity': [1, 5],
+    'complexity': [1, 9],
     'curly': [1, 'multi-or-nest', 'consistent'],
     'dot-location': [2, 'property'],
     'no-empty-function': 1,
@@ -101,7 +109,19 @@ module.exports = {
     'no-mixed-requires': 2,
     'no-new-require': 0,
     'no-path-concat': 1,
-    'no-sync': 1
+    'no-sync': 1,
+    'class-methods-use-this': [1, {
+      'exceptMethods': [
+        'componentDidMount',
+        'componentDidUpdate',
+        'componentWillMount',
+        'componentWillReceiveProps',
+        'componentWillUnmount',
+        'componentWillUpdate',
+        'render',
+        'shouldComponentUpdate',
+      ]
+    }]
     // stylistic (leaving up to standard)
 
     // ECMAScript 6 (tbd)

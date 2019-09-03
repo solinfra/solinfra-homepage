@@ -1,41 +1,42 @@
-import React, { Component } from 'react';
-import Scroll from './Scroll';
+import React, { Component } from 'react'
+import Scroll from './Scroll'
 
-import { ReactComponent as NavLogo } from '../assets/img/logos/logo-transparent-no-text.svg';
+import { ReactComponent as NavLogo } from '../assets/img/logos/logo-transparent-no-text.svg'
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
       openMenu: false,
-      visibilityClass: '',
-    };
+      visibilityClass: ''
+    }
   }
+
   toggleMenu = value => {
-    this.setState({ openMenu: value });
+    this.setState({ openMenu: value })
   };
+
   handleScroll = () => {
-    const { visibilityClass } = this.state;
+    const { visibilityClass } = this.state
     if (window.pageYOffset > 300) {
-      if (visibilityClass !== 'navbar-shrink shadow-sm') {
-        this.setState({ visibilityClass: 'navbar-shrink shadow-sm' });
-      }
+      if (visibilityClass !== 'navbar-shrink shadow-sm')
+        this.setState({ visibilityClass: 'navbar-shrink shadow-sm' })
     } else {
-      if (visibilityClass === 'navbar-shrink shadow-sm') {
-        this.setState({ visibilityClass: '' });
-      }
+      if (visibilityClass === 'navbar-shrink shadow-sm')
+        this.setState({ visibilityClass: '' })
     }
   };
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+  componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll)
   }
 
-  render() {
-    const { openMenu, visibilityClass } = this.state;
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  render () {
+    const { openMenu, visibilityClass } = this.state
     return (
       <nav
         className={`navbar navbar-expand-lg fixed-top ${visibilityClass}`}
@@ -91,6 +92,6 @@ export default class Header extends Component {
           </div>
         </div>
       </nav>
-    );
+    )
   }
 }
