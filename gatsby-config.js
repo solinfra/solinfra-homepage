@@ -1,14 +1,14 @@
-const config = require('./config');
+const config = require('./config')
 
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: config.siteTitle,
+    title: config.siteTitle
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.manifestName,
         short_name: config.manifestShortName,
@@ -16,17 +16,17 @@ module.exports = {
         background_color: config.manifestBackgroundColor,
         theme_color: config.manifestThemeColor,
         display: config.manifestDisplay,
-        icon: config.manifestIcon, // This path is relative to the root of the site.
-      },
+        icon: config.manifestIcon // This path is relative to the root of the site.
+      }
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-		{
-			resolve: 'gatsby-plugin-svgr',
-			options: {
-				prettier: true,          // use prettier to format JS code output (default)
-				svgo: false,              // use svgo to optimize SVGs (default)
-			},
-		},
-	],
-};
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        prettier: true, // use prettier to format JS code output (default)
+        svgo: false // use svgo to optimize SVGs (default)
+      }
+    }
+  ]
+}

@@ -8,7 +8,7 @@ module.exports = {
   manifestThemeColor: '#34d12e',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/`,
+  pathPrefix: '/',
   heading: 'solinfra',
   subHeading: '... building the clouds of tomorrow, today',
 
@@ -89,14 +89,14 @@ module.exports = {
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/solinfra',
+      url: 'https://twitter.com/solinfra'
     },
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/solinfra',
-    },
+      url: 'https://github.com/solinfra'
+    }
   ],
   email: 'contact@solinfra.io',
-  address: 'Suite 1801 - 1 Yonge Street, Toronto, Canada, M5E 1W7',
-};
+  address: 'Suite 1801 - 1 Yonge Street, Toronto, Canada, M5E 1W7'
+}
