@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * minifies all JPEG images in raw dir and brings them into usable
  * asset directory for images. Utilizies jpegtran to strip
