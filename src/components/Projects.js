@@ -50,7 +50,11 @@ class Projects extends Component {
 
           <div className="row align-items-center no-gutters mb-4 mb-lg-5">
             <div className="col-xl-7 col-lg-7">
-              <Img className="img-fluid mb-3 mb-lg-0" fluid={data.dock.childImageSharp.fluid} />
+              <Img
+                className="img-fluid mb-3 mb-lg-0"
+                fadeIn={true}
+                fluid={data.dock.childImageSharp.fluid}
+              />
             </div>
             <div className="col-xl-5 col-lg-5">
               <div className="featured-text text-center text-lg-left">
@@ -86,13 +90,14 @@ class Projects extends Component {
   }
 }
 
+// webp is less but need to check compatibility
 export default props =>
   <StaticQuery
     query={graphql`
       query {
         dock: file(relativePath: { eq: "pr-dock.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1368,  quality: 64) {
               ...GatsbyImageSharpFluid
             }
           }
