@@ -8,5 +8,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: lint-js
       run: |
-        npm i --only=dev 
+        npm i
         npm run lint
