@@ -1,0 +1,23 @@
+name: auditor
+on: 
+  push:
+    branches:
+    - master
+    - develop
+  pull_request:
+    branches:
+    - master
+    - develop
+  schedule:
+    - cron: '@daily'
+
+jobs:
+  audit:
+    name: npm-audit
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: audit
+      run: |
+        npm i
+        npm audit

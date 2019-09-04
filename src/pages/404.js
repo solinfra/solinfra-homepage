@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import { Link } from 'gatsby';
+import Layout from '../components/Layout'
+import Header from '../components/Header'
+import { Link } from 'gatsby'
 
-const IndexPage = () => (
+const IndexPage = () =>
   <Layout>
     <Header />
     <header className="masthead">
@@ -19,6 +19,5 @@ const IndexPage = () => (
       </div>
     </header>
   </Layout>
-);
 
-export default IndexPage;
+export default IndexPage

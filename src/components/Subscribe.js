@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-export default function Subscribe() {
+export default function Subscribe () {
   return (
     <section id="signup" className="signup-section">
       <div className="container">
@@ -31,5 +31,5 @@ export default function Subscribe() {
         </div>
       </div>
     </section>
-  );
+  )
 }
