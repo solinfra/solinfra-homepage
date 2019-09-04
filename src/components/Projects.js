@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import config from '../../config'
 
-class Projects extends Component {
+class ProjectsComponent extends Component {
   constructor (props, data) {
     super(props)
-    console.log(this.props)
     this.state = {
       smallClass: 'shadow'
     }
@@ -90,8 +90,18 @@ class Projects extends Component {
   }
 }
 
+ProjectsComponent.propTypes = {
+  data: PropTypes.shape({
+    dock: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape.isRequired
+      }).isRequired
+    }).isRequired
+  }).isRequired
+}
+
 // webp is less but need to check compatibility
-export default props =>
+const Projects = props =>
   <StaticQuery
     query={graphql`
       query {
@@ -104,5 +114,7 @@ export default props =>
         }
       }
     `}
-    render={data => <Projects data={data} {...props} />}
+    render={data => <ProjectsComponent data={data} {...props} />}
   />
+
+export default Projects

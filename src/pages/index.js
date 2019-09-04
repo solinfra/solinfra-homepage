@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import BgImg from 'gatsby-background-image'
 
@@ -11,7 +12,6 @@ import Footer from '../components/Footer'
 import SocialLinks from '../components/SocialLinks'
 import Projects from '../components/Projects'
 import Header from '../components/Header'
-
 
 const IndexPage = ({ data }) =>
   <Layout>
@@ -74,6 +74,21 @@ const IndexPage = ({ data }) =>
     <SocialLinks />
     <Footer />
   </Layout>
+
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    imgMasthead: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape.isRequired
+      }).isRequired
+    }).isRequired,
+    imgFooter: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape.isRequired
+      }).isRequired
+    }).isRequired
+  }).isRequired
+}
 
 export const query = graphql`
   query {
