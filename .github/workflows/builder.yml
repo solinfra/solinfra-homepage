@@ -1,0 +1,21 @@
+name: builder
+on: 
+  push:
+    branches:
+    - master
+    - develop
+  pull_request:
+    branches:
+    - master
+    - develop
+
+jobs:
+  audit:
+    name: gatsby-build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: build
+      run: |
+        npm i
+        npm run build

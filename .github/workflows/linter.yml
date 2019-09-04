@@ -2,7 +2,7 @@ name: linter
 on: push
 jobs:
   lint:
-    name: lint
+    name: eslint-js
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1

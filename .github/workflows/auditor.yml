@@ -1,4 +1,4 @@
-name: audit
+name: auditor
 on: 
   push:
     branches:
@@ -13,11 +13,11 @@ on:
 
 jobs:
   audit:
-    name: audit
+    name: npm-audit
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: audit-npm
+    - name: audit
       run: |
         npm i
         npm audit
