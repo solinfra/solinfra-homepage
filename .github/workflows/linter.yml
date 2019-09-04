@@ -1,0 +1,12 @@
+name: linter
+on: push
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: lint-js
+      run: |
+        npm i --only=dev 
+        npm run lint
