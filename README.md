@@ -61,14 +61,26 @@ module.exports = {
 
 `package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.
 
-Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js`. Change `pathPrefix` to relevant path if your gatsby site is hosted on subpath of a domain, `https://theanubhav.com/somePath/`. If you are hosting it as root site, i.e, `https://theanubhav.com/` , remove the pathPrefix configuration.
-
 ### Contribution
 
 Suggestions and PRs are welcome!
 
 Please create issue or open PR request for contribution.
 
+
 ### License
 
 
+### NOTES
+
+needed for imagemin Mozjpeg on alpine docker, else it will just download glibc linked binary instead of compiling musl compatible version install (credits to Github user @divick):
+
+```
+apk --no-cache add shadow gcc musl-dev autoconf automake make libtool nasm tiff jpeg zlib zlib-dev file pkgconf
+```
+
+### Attributions
+
+#### Images
+
+Masthead: on [pixabay.com](https://pixabay.com/) from [@jplenio](https://www.instagram.com/jplenio/)

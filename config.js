@@ -8,7 +8,7 @@ module.exports = {
   manifestThemeColor: '#34d12e',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: '/',
+  pathPrefix: null,
   heading: 'solinfra',
   subHeading: '... building the clouds of tomorrow, today',
 
@@ -19,7 +19,7 @@ module.exports = {
             Whether you're a start-up with the foresight of appropriately preparing
             for your infrastructure needs or
             an already established organization looking to upgrade your legacy IT
-            infrastructure, we&lsquo;re here for you.
+            infrastructure, we're here for you.
             Our experienced team will blueprint and manage the ideal
             infrastructure to make your service run efficiently, with resilience and
             scalablity in mind.
