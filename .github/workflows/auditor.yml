@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: npm-install
+      run: npm i
     - name: audit
-      run: |
-        npm i
-        npm audit
+      run: npm audit

@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: npm-install
+      run: npm i
     - name: build
-      run: |
-        npm i
-        npm run build
+      run: npm run build
