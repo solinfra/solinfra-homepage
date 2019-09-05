@@ -9,7 +9,7 @@ on:
     - master
     - develop
   schedule:
-    - cron: '@daily'
+    - cron: 0 * * * *
 
 jobs:
   audit:
