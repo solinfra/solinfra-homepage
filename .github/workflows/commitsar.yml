@@ -1,0 +1,10 @@
+name: commitsar
+on: push
+jobs:
+  commitsar:
+    name: check-commits
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: docker-commitsar
+      run: docker run -v "$PWD":/wd -w /wd --rm fallion/commitsar
