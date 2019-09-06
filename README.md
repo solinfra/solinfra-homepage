@@ -1,8 +1,11 @@
 # homepage
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
+![Lighthouse Accessbility badge](./test/lighthouse/lighthouse_accessibility.svg)
+![Lighthouse Best Practices badge](./test/lighthouse/lighthouse_best-practices.svg)
+![Lighthouse Performance badge](./test/lighthouse/lighthouse_performance.svg)
+![Lighthouse PWA badge](./test/lighthouse/lighthouse_pwa.svg)
 ![Lighthouse SEO badge](./test/lighthouse/lighthouse_seo.svg)
-<img src="./test/lighthouse/lighthouse_seo.svg">
 
 Gatsby.js V2 starter template based on Grayscale by startbootstrap
 
