@@ -1,9 +1,0 @@
-name: auditor
-on: push
-jobs:
-  conform:
-    name: conform
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: talos-systems/conform@v0.1.0-alpha.16

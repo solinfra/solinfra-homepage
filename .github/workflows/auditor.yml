@@ -9,7 +9,7 @@ on:
     - master
     - develop
   schedule:
-    - cron: '@daily'
+    - cron: 0 16 * * 1 # run every monday at 16:00 UTC
 
 jobs:
   audit:
@@ -17,7 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: npm-install
-      run: npm i
     - name: audit
       run: npm audit
