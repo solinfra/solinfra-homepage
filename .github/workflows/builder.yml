@@ -10,7 +10,7 @@ on:
     - develop
 
 jobs:
-  audit:
+  build:
     name: gatsby-build
     runs-on: ubuntu-latest
     steps:
