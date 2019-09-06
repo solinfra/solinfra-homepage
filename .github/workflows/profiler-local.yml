@@ -1,0 +1,29 @@
+name: profiler-local
+on: 
+  push:
+    branches:
+    - master
+    - develop
+  pull_request:
+    branches:
+    - master
+    - develop
+
+jobs:
+  audit:
+    name: lighthouse
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: npm-ci
+      run: npm ci
+    - name: build
+      run: npm run build
+    - name: serve
+      run: |
+        npm run serve &
+        while ! nc -z localhost 9000 </dev/null; do sleep 1; done
+    - name: profile
+      run: npx lighthouse-ci http://localhost:9000 \
+        --score=90 \
+        --performance=80
