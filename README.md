@@ -1,6 +1,9 @@
 # homepage
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
+![Lighthouse SEO badge](./test/lighthouse/lighthouse_seo.svg)
+<img src="./test/lighthouse/lighthouse_seo.svg">
+
 Gatsby.js V2 starter template based on Grayscale by startbootstrap
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).

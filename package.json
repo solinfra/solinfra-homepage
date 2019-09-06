@@ -43,10 +43,12 @@
     "deploy": "npm run build && gh-pages -d public",
     "serve": "gatsby serve -H 0.0.0.0",
     "clean": "rimraf .cache public",
+    "lighthouse:badge": "npx lighthouse-badges --urls http://www.solinfra.io https://solinfra.surge.sh -o test/lighthouse",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix",
     "minify": "npm run minify:img",
-    "minify:img": "scripts/minify-img.js"
+    "minify:img": "scripts/minify-img.js",
+    "release": "npx standard-version"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
