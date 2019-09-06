@@ -44,7 +44,7 @@ export default class Header extends Component {
       >
         <div className="container">
           <Scroll type="class" element="page-top">
-            <a className="navbar-brand" href="#page-top">
+            <a className="navbar-brand" href="#page-top" aria-label="Scroll to top">
               <NavLogo />
             </a>
           </Scroll>
