@@ -1,0 +1,21 @@
+name: deployer
+on: 
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    name: gh-pages
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.SOLINFRA_BOT_ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: public
+        BUILD_SCRIPT: npm ci && npm run build
+        CNAME: www.solinfra.io
+        COMMIT_EMAIL: github-bot@solinfra.io
+        COMMIT_NAME: solinfra-bot
