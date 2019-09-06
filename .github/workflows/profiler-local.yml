@@ -10,7 +10,7 @@ on:
     - develop
 
 jobs:
-  audit:
+  profile:
     name: lighthouse
     runs-on: ubuntu-latest
     steps:
