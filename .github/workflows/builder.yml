@@ -10,12 +10,12 @@ on:
     - develop
 
 jobs:
-  audit:
+  build:
     name: gatsby-build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: npm-ci
+      run: npm ci
     - name: build
-      run: |
-        npm i
-        npm run build
+      run: npm run build

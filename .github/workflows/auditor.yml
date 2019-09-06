@@ -9,7 +9,7 @@ on:
     - master
     - develop
   schedule:
-    - cron: 0 * * * *
+    - cron: 0 16 * * 1 # run every monday at 16:00 UTC
 
 jobs:
   audit:
@@ -18,6 +18,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: audit
-      run: |
-        npm i
-        npm audit
+      run: npm audit
