@@ -1,5 +1,14 @@
 module.exports = {
-  siteTitle: 'Solinfra - Solving your infrastructure', // <title>
+  siteTitle: 'Solinfra - Solving Your Infrastructure',
+  metadata: {
+    keywords: 'infrastructure, IT, cloud, cloud-native, open-source, kubernetes, k8s, rancher, reliable, scalable, resilient, self-healing',
+    description: 'We blueprint and manage the ideal infrastructure to make your service run efficiently, with resilience and scalablity in mind. Let us solve your infrastructure today!',
+    twitterUsername: '@solinfra',
+    language: 'EN',
+    subject: 'Providing IT and Cloud Infrastructure Solutions',
+    robots: 'noindex,nofollow,noarchive',
+    copyright: 'Solinfra'
+  },
   companyName: 'Solinfra',
   manifestName: 'Solinfra - Solving your infrastructure',
   manifestShortName: 'Solinfra', // max 12 characters

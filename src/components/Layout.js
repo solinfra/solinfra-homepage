@@ -1,39 +1,32 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+
+import config from '../../config'
 
 import '../assets/sass/index.scss'
 
 class Layout extends Component {
   render () {
     const { children } = this.props
+    const { metadata } = config
     return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
-            }
+      <>
+        <Helmet
+          title={config.siteTitle}
+          meta={
+            Object.keys(metadata).map(name =>
+              ({
+                name,
+                content: metadata[name]
+              })
+            )
           }
-        `}
-        render={data =>
-          <>
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Grayscale' },
-                { name: 'keywords', content: 'site, web' }
-              ]}
-            >
-              <html lang="en" />
-            </Helmet>
-            <div className={'page-top'}>{children}</div>
-          </>
-        }
-      />
+        >
+          <html lang="en" />
+        </Helmet>
+        <div className={'page-top'}>{children}</div>
+      </>
     )
   }
 }
