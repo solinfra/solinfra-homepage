@@ -17,7 +17,7 @@ Install necessary dependencies via
 npm install
 ```
 
-*NOTE*: You may need various dependencies to build certain binary dependencies (such as for image processing). This project has a pre-install hook for Alpine Linux currently, which may be used as a reference for other distros in the 'scripts' folder. If the hook fails, for cases where you're running as root, you may run it manually via 
+*NOTE*: You may need additional packages installed for your distro to build certain binary dependencies (such as for image processing). This project has a pre-install hook for Alpine Linux currently, which may be used as a reference for other distros in the 'scripts' folder. If the hook fails, for cases where you're running as root, you may run it manually via
 
 ```sh
 rm -rf node_modules/*
@@ -48,7 +48,7 @@ to update the badge scores appropriately for new deployments, and merge it in to
 
 ## Attributions
 
-These site is possible thanks to the indirect help and work of the following
+This site is possible thanks to the indirect help and work of the following
 
 ### Template
 
