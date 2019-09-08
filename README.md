@@ -1,6 +1,6 @@
 # solinfra-homepage
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ![Lighthouse Accessbility badge](./test/lighthouse/lighthouse_accessibility.svg)
 ![Lighthouse Best Practices badge](./test/lighthouse/lighthouse_best-practices.svg)
