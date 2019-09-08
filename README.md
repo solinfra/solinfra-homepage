@@ -2,11 +2,11 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-![Lighthouse Accessbility badge](./test/lighthouse/lighthouse_accessibility.svg)
-![Lighthouse Best Practices badge](./test/lighthouse/lighthouse_best-practices.svg)
-![Lighthouse Performance badge](./test/lighthouse/lighthouse_performance.svg)
-![Lighthouse PWA badge](./test/lighthouse/lighthouse_pwa.svg)
-![Lighthouse SEO badge](./test/lighthouse/lighthouse_seo.svg)
+![Lighthouse Accessbility badge](assets/badges/lighthouse/lighthouse_accessibility.svg)
+![Lighthouse Best Practices badge](assets/badges/lighthouse/lighthouse_best-practices.svg)
+![Lighthouse Performance badge](assets/badges/lighthouse/lighthouse_performance.svg)
+![Lighthouse PWA badge](assets/badges/lighthouse/lighthouse_pwa.svg)
+![Lighthouse SEO badge](assets/badges/lighthouse/lighthouse_seo.svg)
 
 Gatsby.js V2 Solinfra homepage
 
