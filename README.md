@@ -1,4 +1,5 @@
-# homepage
+# solinfra-homepage
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
 ![Lighthouse Accessbility badge](./test/lighthouse/lighthouse_accessibility.svg)
@@ -7,86 +8,58 @@
 ![Lighthouse PWA badge](./test/lighthouse/lighthouse_pwa.svg)
 ![Lighthouse SEO badge](./test/lighthouse/lighthouse_seo.svg)
 
-Gatsby.js V2 starter template based on Grayscale by startbootstrap
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
-
-Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-grayscale/)
-
-## Screenshot
-
-![Screenshot](./src/assets/img/demo.png)
+Gatsby.js V2 Solinfra homepage
 
 ## Install
 
-Make sure that you have the Gatsby CLI program installed:
-
+Install necessary dependencies via
 ```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-
-```sh
-gatsby new <site-name> https://github.com/anubhavsrivastava/gatsby-starter-grayscale
-```
-
-Then you can run it by:
-
-```sh
-cd gatsby-example-site
 npm install
-gatsby develop
 ```
 
-### Personalization
+*NOTE*: You may need various dependencies to build certain binary dependencies (such as for image processing). This project has a pre-install hook for Alpine Linux currently, which may be used as a reference for other distros in the 'scripts' folder. If the hook fails, for cases where you're running as root, you may run it manually via 
 
-Edit `config.js` to put up your details
-
-```javascript
-module.exports = {
-  siteTitle: 'Gatsby Starter grayscale', // <title>
-  ...
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
-
-  // social
-  socialLinks: [
-    {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    }
-    ...
-  ],
-};
-
+```sh
+rm -rf node_modules/*
+npm run preinstall && npm i
 ```
 
-### Deploying using Github page
+## Running
 
-`package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.
+### Development
 
-### Contribution
-
-Suggestions and PRs are welcome!
-
-Please create issue or open PR request for contribution.
-
-
-### License
-
-
-### NOTES
-
-needed for imagemin Mozjpeg on alpine docker, else it will just download glibc linked binary instead of compiling musl compatible version install (credits to Github user @divick):
-
-```
-apk --no-cache add shadow gcc musl-dev autoconf automake make libtool nasm tiff jpeg zlib zlib-dev file pkgconf
+To launch a local development instance:
+```sh
+npm run develop
 ```
 
-### Attributions
+### Deployment
 
-#### Images
+The deployment is part of a complete end-to-end CI/CD pipeline using Github actions. Push whatever latest changes ought to be live, onto the master branch. They must of course pass various checks before merging is permitted, such as linting, auditing, profiling, etc.
+
+It's good practice to run
+
+```sh
+npm run lighthouse:badge
+```
+
+to update the badge scores appropriately for new deployments, and merge it in to master.
+
+
+## Attributions
+
+These site is possible thanks to the indirect help and work of the following
+
+### Template
+
+[@anubhavsrivastava](https://github.com/anubhavsrivastava) for the great Gatsby.js V2 starter [template](https://github.com/anubhavsrivastava/gatsby-starter-grayscale)
+
+### Images
+
+In order of appearance
 
 Masthead: on [pixabay.com](https://pixabay.com/) from [@jplenio](https://www.instagram.com/jplenio/)
+
+Dock: on [unsplash.com](https://unsplash.com/) from [@helloitsammiel](https://unsplash.com/@helloitsammiel)
+
+Footer: on [unsplash.com](https://unsplash.com/) from [@samuelzeller](https://unsplash.com/@samuelzeller)

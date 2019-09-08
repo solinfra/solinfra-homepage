@@ -5,7 +5,7 @@
  * wasteful metadata and mozjpeg to do the real image compression.
  *
  * If running in alpine/docker instance, ensure needed deps
- * listed in the Readme are installed.
+ * are installed, listed in install-deps-alpine.sh script.
  */
 const imagemin = require('imagemin')
 const imageminJpegtran = require('imagemin-jpegtran')
