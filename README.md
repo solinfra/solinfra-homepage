@@ -43,7 +43,7 @@ It's good practice to run
 npm run lighthouse:badge
 ```
 
-to update the badge scores appropriately for new deployments, and merge it in to master.
+to update the badge scores appropriately for new deployments, and merge it in to master (must have chromium).
 
 
 ## Attributions
