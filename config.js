@@ -6,7 +6,6 @@ module.exports = {
     twitterUsername: '@solinfra',
     language: 'EN',
     subject: 'Providing IT and Cloud Infrastructure Solutions',
-    robots: 'noindex,nofollow,noarchive',
     copyright: 'Solinfra'
   },
   companyName: 'Solinfra',
