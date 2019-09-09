@@ -5,7 +5,7 @@
   "description": "Gatsby.js V2 solinfra homepage based on Grayscale template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solinfra/homepage.git"
+    "url": "git+https://github.com/D-Nice/solinfra-homepage.git"
   },
   "author": {
     "name": "D-Nice",
@@ -70,7 +70,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/solinfra/homepage/issues"
+    "url": "https://github.com/D-Nice/solinfra-homepage/issues"
   },
   "homepage": "https://www.solinfra.io"
 }
